@@ -15,7 +15,7 @@ spec:
         app: test
     spec:
       volumes:
-        - name: iSCSIVol
+        - name: iscsi-vol
           persistentVolumeClaim:
             claimName: pvc-iscsi
       containers:
@@ -27,6 +27,6 @@ spec:
           - "sleep 7d"
         volumeMounts:
           - mountPath: "/data"
-            name: iSCSIVol
+            name: iscsi-vol
       nodeSelector:
         kubernetes.io/os: linux
