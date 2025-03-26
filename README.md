@@ -519,7 +519,7 @@ rhel2   Ready    <none>          332d   v1.29.4
 rhel3   Ready    control-plane   332d   v1.29.4
 ```
 
-Remove the taint and verify the Trident node state is Cleanable state
+Remove the taint and verify the Trident node is in cleanable state
 
 ```
 # kubectl taint nodes rhel1 node.kubernetes.io/out-of-service=nodeshutdown:NoExecute-
