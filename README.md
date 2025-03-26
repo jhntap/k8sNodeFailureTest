@@ -376,26 +376,6 @@ node/rhel1 tainted
   "name": "rhel3",
   "taints": null
 }
-{
-  "name": "win1",
-  "taints": [
-    {
-      "effect": "NoSchedule",
-      "key": "win",
-      "value": "true"
-    }
-  ]
-}
-{
-  "name": "win2",
-  "taints": [
-    {
-      "effect": "NoSchedule",
-      "key": "win",
-      "value": "true"
-    }
-  ]
-}
 
 # tridentctl get node rhel1 -n trident -o yaml
 items:
